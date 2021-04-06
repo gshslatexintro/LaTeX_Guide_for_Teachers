@@ -1,0 +1,21 @@
+\frametitle{Figure Environment}
+\small
+The option of the figure environment specifies the placement.
+\begin{itemize}
+\item \textcolor{GSHSRED}{\textbf{h}} Place the float \emph{here}.
+\item \textcolor{GSHSRED}{\textbf{t}} Position at the \emph{top} of the page.
+\item \textcolor{GSHSRED}{\textbf{b}} Position at the \emph{bottom} of the page.
+\item \textcolor{GSHSRED}{\textbf{p}} Put on a special \emph{page} for floats only.
+\end{itemize}
+\begin{block}{}
+\begin{lstlisting}
+\usepackage[labelsep=period,labelfont=bf]{caption}
+\end{lstlisting}
+\end{block}
+makes \textrm{Figure 1:} $\rightarrow$ \textbf{\textrm{Figure 1.}}
+\begin{block}{}
+\begin{lstlisting}
+\renewcommand{\figurename}{Fig}
+\end{lstlisting}
+\end{block}
+makes \textbf{\textrm{Fig 1.}}
